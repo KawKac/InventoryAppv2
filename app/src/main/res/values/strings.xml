@@ -1,3 +1,9 @@
 <resources>
-    <string name="app_name">InventoryAppv2</string>
+    <string name="app_name">Inventory App v2</string>
+
+    <!--  Main  Fragment -->
+    <string name="product_name">Product name</string>
+
+
+
 </resources>
