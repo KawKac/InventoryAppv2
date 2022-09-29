@@ -3,6 +3,10 @@
     <string name="app_name">Inventory App v2</string>
 
     <!--  Main  Fragment -->
+    <string name="ean_or_ian">Kod EAN/IAN</string>
     <string name="product_name">Nazwa produktu</string>
+    <string name="product_category">Kategoria produktu</string>
+    <string name="product_save">Dodaj nowy produkt</string>
+    <string name="product_list">Lista produktów</string>
 
 </resources>
