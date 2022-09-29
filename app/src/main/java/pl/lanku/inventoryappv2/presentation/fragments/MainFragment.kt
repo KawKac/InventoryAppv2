@@ -5,13 +5,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import org.koin.androidx.viewmodel.ext.android.viewModel
 import pl.lanku.inventoryappv2.R
 import pl.lanku.inventoryappv2.databinding.MainFragmentBinding
-import pl.lanku.inventoryappv2.presentation.products.InventoryViewModel
 
 class MainFragment : Fragment() {
-    private var viewModel: InventoryViewModel by viewModel()
+    //    private var viewModel: InventoryViewModel by viewModel()
     lateinit var binding: MainFragmentBinding
 
     companion object {
