@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_cotroller"
+    app:startDestination="@id/productListFragmentActivity">
+
+    <activity
+        android:id="@+id/productListFragmentActivity"
+        android:name="pl.lanku.inventoryappv2.presentation.fragmentsactivity.ProductListFragmentActivity"
+        android:label="ProductListFragmentActivity" />
+    <activity
+        android:id="@+id/mainFragmentActivity"
+        android:name="pl.lanku.inventoryappv2.presentation.fragmentsactivity.MainFragmentActivity"
+        android:label="MainFragmentActivity" />
+</navigation>

@@ -5,21 +5,14 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.viewModels
 import pl.lanku.inventoryappv2.R
 import pl.lanku.inventoryappv2.databinding.MainFragmentBinding
-import org.koin.androidx.viewmodel.ext.android.viewModel
 import pl.lanku.inventoryappv2.presentation.products.InventoryViewModel
 
 class MainFragment : Fragment(R.layout.main_fragment) {
-    private var viewModel: InventoryViewModel by viewModel()
+    private val viewModel by viewModels<InventoryViewModel>()
     private lateinit var binding: MainFragmentBinding
-
-
-    companion object {
-        fun newInstance(): MainFragment {
-            return MainFragment()
-        }
-    }
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -34,12 +27,26 @@ class MainFragment : Fragment(R.layout.main_fragment) {
         binding = MainFragmentBinding.inflate(layoutInflater)
 
         binding.buttonProductList.setOnClickListener {
-            viewModel.ean_or_ian = binding.editTextEanOrIan.getText().toString()
-            viewModel.product_name = binding.editTextProductName.getText().toString()
-            viewModel.product_category = binding.editTextProductCategory.getText().toString()
-
+            viewModel.eanOrIan = binding.editTextEanOrIan.getText().toString()
+            viewModel.productName = binding.editTextProductName.getText().toString()
+            viewModel.productCategory = binding.editTextProductCategory.getText().toString()
+            viewModel.insertDataToDatabase(
+                viewModel.eanOrIan,
+                viewModel.productName,
+                viewModel.productCategory
+            )
+            clearEditText()
         }
     }
 
+    private fun clearEditText() {
+        binding.editTextEanOrIan.text.clear()
+        binding.editTextProductName.text.clear()
+        binding.editTextProductCategory.text.clear()
+    }
 
+    override fun onDestroyView() {
+        super.onDestroyView()
+        binding = null
+    }
 }

@@ -8,4 +8,6 @@ class ProductRepository(
     private val productDao: ProductDao
 ) {
     val allProducts: Flow<List<Product>> = productDao.getAll()
+
+    fun insertIntoDatabase(ean:String, name:String, category:String) = productDao.insert(ean, name, category)
 }
