@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:name="pl.lanku.inventoryappv2.presentation.fragments.MainFragment">
 
     <EditText
         android:id="@+id/editTextEanOrIan"
@@ -33,10 +33,10 @@
         android:id="@+id/editTextProductCategory"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
         android:ems="10"
         android:hint="@string/product_category"
         android:inputType="text"
-        android:layout_marginTop="45dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextProductName" />
@@ -45,8 +45,8 @@
         android:id="@+id/buttonSaveNewProduct"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/product_save"
         android:layout_marginBottom="45dp"
+        android:text="@string/product_save"
         app:layout_constraintBottom_toTopOf="@+id/buttonProductList"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -55,8 +55,8 @@
         android:id="@+id/buttonProductList"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/product_list"
         android:layout_marginBottom="45dp"
+        android:text="@string/product_list"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

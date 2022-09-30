@@ -8,9 +8,9 @@ import androidx.fragment.app.Fragment
 import pl.lanku.inventoryappv2.R
 import pl.lanku.inventoryappv2.databinding.MainFragmentBinding
 
-class MainFragment : Fragment() {
+class MainFragment : Fragment(R.layout.main_fragment) {
     //    private var viewModel: InventoryViewModel by viewModel()
-    lateinit var binding: MainFragmentBinding
+    private lateinit var binding: MainFragmentBinding
 
     companion object {
         fun newInstance(): MainFragment {
@@ -34,4 +34,6 @@ class MainFragment : Fragment() {
 
         }
     }
+
+
 }
