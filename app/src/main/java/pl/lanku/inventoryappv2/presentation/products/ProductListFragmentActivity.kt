@@ -1,4 +1,4 @@
-package pl.lanku.inventoryappv2.presentation.fragmentsactivity
+package pl.lanku.inventoryappv2.presentation.products
 
 import androidx.fragment.app.FragmentActivity
 import pl.lanku.inventoryappv2.R

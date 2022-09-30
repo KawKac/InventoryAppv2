@@ -6,10 +6,10 @@
 
     <activity
         android:id="@+id/productListFragmentActivity"
-        android:name="pl.lanku.inventoryappv2.presentation.fragmentsactivity.ProductListFragmentActivity"
+        android:name="pl.lanku.inventoryappv2.presentation.products.ProductListFragmentActivity"
         android:label="ProductListFragmentActivity" />
     <activity
         android:id="@+id/mainFragmentActivity"
-        android:name="pl.lanku.inventoryappv2.presentation.fragmentsactivity.MainFragmentActivity"
+        android:name="pl.lanku.inventoryappv2.presentation.products.MainFragmentActivity"
         android:label="MainFragmentActivity" />
 </navigation>

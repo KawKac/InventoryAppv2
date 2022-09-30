@@ -6,7 +6,7 @@
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/main_fragment"
-        android:name="pl.lanku.inventoryappv2.presentation.fragments.MainFragment"
+        android:name="pl.lanku.inventoryappv2.presentation.products.MainFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"

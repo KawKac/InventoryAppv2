@@ -1,4 +1,4 @@
-package pl.lanku.inventoryappv2.presentation.fragments
+package pl.lanku.inventoryappv2.presentation.products
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,7 +8,6 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import pl.lanku.inventoryappv2.R
 import pl.lanku.inventoryappv2.databinding.MainFragmentBinding
-import pl.lanku.inventoryappv2.presentation.products.InventoryViewModel
 
 class MainFragment : Fragment(R.layout.main_fragment) {
     private val viewModel by viewModels<InventoryViewModel>()
