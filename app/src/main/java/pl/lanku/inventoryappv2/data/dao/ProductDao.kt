@@ -4,12 +4,13 @@ import androidx.room.Dao
 import androidx.room.Delete
 import androidx.room.Insert
 import androidx.room.Query
+import kotlinx.coroutines.flow.Flow
 import pl.lanku.inventoryappv2.data.entity.Product
 
 @Dao
 interface ProductDao {
     @Query("SELECT * FROM product")
-    fun getAll(): List<Product>
+    fun getAll(): Flow<List<Product>>
 
     @Insert
     fun insert(vararg product: Product)
