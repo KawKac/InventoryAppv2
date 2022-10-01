@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
+import androidx.navigation.Navigation.findNavController
 import pl.lanku.inventoryappv2.R
 import pl.lanku.inventoryappv2.databinding.MainFragmentBinding
 
@@ -35,6 +36,14 @@ class MainFragment : Fragment(R.layout.main_fragment) {
                 viewModel.productCategory
             )
             clearEditText()
+        }
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        binding.buttonProductList.setOnClickListener {
+            findNavController().navigate(R.id.)
         }
     }
 

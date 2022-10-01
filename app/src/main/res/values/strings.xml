@@ -8,4 +8,7 @@
     <string name="product_save">Add new product</string>
     <string name="product_list">Product list</string>
 
+    <!-- Product List Fragment-->
+    <string name="back">Back</string>
+
 </resources>

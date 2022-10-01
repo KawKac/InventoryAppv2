@@ -5,6 +5,9 @@
       <map>
         <entry key="..\:/KotlinApp/InventoryAppv2/app/src/main/res/layout/activity_products.xml" value="0.12" />
         <entry key="..\:/KotlinApp/InventoryAppv2/app/src/main/res/layout/main_fragment.xml" value="0.33" />
+        <entry key="..\:/Repositories/InventoryAppv2/app/src/main/res/layout/activity_products.xml" value="0.25416666666666665" />
+        <entry key="..\:/Repositories/InventoryAppv2/app/src/main/res/layout/main_fragment.xml" value="0.25416666666666665" />
+        <entry key="..\:/Repositories/InventoryAppv2/app/src/main/res/layout/product_list_fragment.xml" value="0.25416666666666665" />
       </map>
     </option>
   </component>

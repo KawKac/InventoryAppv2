@@ -1,4 +1,4 @@
-package pl.lanku.inventoryappv2.presentation.products
+package pl.lanku.inventoryappv2.presentation
 
 import androidx.lifecycle.ViewModel
 import pl.lanku.inventoryappv2.data.ProductRepository

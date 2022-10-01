@@ -2,14 +2,13 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/nav_cotroller"
-    app:startDestination="@id/productListFragmentActivity">
-
-    <activity
-        android:id="@+id/productListFragmentActivity"
-        android:name="pl.lanku.inventoryappv2.presentation.products.ProductListFragmentActivity"
-        android:label="ProductListFragmentActivity" />
+    app:startDestination="@id/mainFragmentActivity">
     <activity
         android:id="@+id/mainFragmentActivity"
         android:name="pl.lanku.inventoryappv2.presentation.products.MainFragmentActivity"
         android:label="MainFragmentActivity" />
+    <activity
+        android:id="@+id/productListFragmentActivity"
+        android:name="pl.lanku.inventoryappv2.presentation.products.ProductListFragmentActivity"
+        android:label="ProductListFragmentActivity" />
 </navigation>
