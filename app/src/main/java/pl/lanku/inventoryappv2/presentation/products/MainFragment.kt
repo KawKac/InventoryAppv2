@@ -10,7 +10,7 @@ import pl.lanku.inventoryappv2.R
 import pl.lanku.inventoryappv2.databinding.MainFragmentBinding
 
 class MainFragment : Fragment(R.layout.main_fragment) {
-    private val viewModel by viewModels<InventoryViewModel>()
+    private val viewModel by viewModels<MainFragmentViewModel>()
     private lateinit var binding: MainFragmentBinding
 
     override fun onCreateView(
@@ -44,8 +44,8 @@ class MainFragment : Fragment(R.layout.main_fragment) {
         binding.editTextProductCategory.text.clear()
     }
 
-    override fun onDestroyView() {
-        super.onDestroyView()
-        binding = null
-    }
+//    override fun onDestroyView() {
+//        super.onDestroyView()
+//        binding = null
+//    }
 }
