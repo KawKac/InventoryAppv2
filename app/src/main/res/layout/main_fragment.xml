@@ -47,12 +47,12 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="45dp"
         android:text="@string/product_save"
-        app:layout_constraintBottom_toTopOf="@+id/buttonProductList"
+        app:layout_constraintBottom_toTopOf="@+id/formFragmentToProductList"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/buttonProductList"
+        android:id="@+id/formFragmentToProductList"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="45dp"

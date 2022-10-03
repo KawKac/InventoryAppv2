@@ -29,7 +29,7 @@ class MainFragment : Fragment(R.layout.main_fragment) {
     }
 
     private fun addNewRowToDatabase() {
-        binding.buttonProductList.setOnClickListener {
+        binding.buttonSaveNewProduct.setOnClickListener {
             viewModel.eanOrIan = binding.editTextEanOrIan.getText().toString()
             viewModel.productName = binding.editTextProductName.getText().toString()
             viewModel.productCategory = binding.editTextProductCategory.getText().toString()
