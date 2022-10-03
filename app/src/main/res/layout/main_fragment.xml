@@ -16,7 +16,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
 
         app:defaultNavHost="true"
-        app:navGraph="@navigation/nav_cotroller" />
+        app:navGraph="@navigation/nav_graph" />
 
     <EditText
         android:id="@+id/editTextEanOrIan"

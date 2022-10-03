@@ -6,7 +6,6 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
-import androidx.navigation.Navigation.findNavController
 import pl.lanku.inventoryappv2.R
 import pl.lanku.inventoryappv2.databinding.MainFragmentBinding
 
@@ -26,6 +25,10 @@ class MainFragment : Fragment(R.layout.main_fragment) {
         super.onCreate(savedInstanceState)
         binding = MainFragmentBinding.inflate(layoutInflater)
 
+        addNewRowToDatabase()
+    }
+
+    private fun addNewRowToDatabase() {
         binding.buttonProductList.setOnClickListener {
             viewModel.eanOrIan = binding.editTextEanOrIan.getText().toString()
             viewModel.productName = binding.editTextProductName.getText().toString()
@@ -39,22 +42,10 @@ class MainFragment : Fragment(R.layout.main_fragment) {
         }
     }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-
-        binding.buttonProductList.setOnClickListener {
-            findNavController().navigate(R.id.)
-        }
-    }
-
     private fun clearEditText() {
         binding.editTextEanOrIan.text.clear()
         binding.editTextProductName.text.clear()
         binding.editTextProductCategory.text.clear()
     }
 
-//    override fun onDestroyView() {
-//        super.onDestroyView()
-//        binding = null
-//    }
 }

@@ -6,6 +6,7 @@ import pl.lanku.inventoryappv2.data.ProductRepository
 class MainFragmentViewModel(
     private val productRepository: ProductRepository
 ) : ViewModel() {
+
     lateinit var eanOrIan : String
     lateinit var productName : String
     lateinit var productCategory :String

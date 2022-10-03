@@ -8,6 +8,7 @@ import pl.lanku.inventoryappv2.R
 import pl.lanku.inventoryappv2.presentation.products.MainFragment
 
 class MainFragmentActivity : FragmentActivity(R.layout.main_fragment) {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         if (savedInstanceState == null) {
@@ -17,4 +18,5 @@ class MainFragmentActivity : FragmentActivity(R.layout.main_fragment) {
             }
         }
     }
+
 }
