@@ -1,4 +1,7 @@
 package pl.lanku.inventoryappv2.presentation.products
 
-class ProductListViewModel {
+import androidx.lifecycle.ViewModel
+
+class ProductListViewModel : ViewModel() {
+    // TODO: Implement the ViewModel
 }
