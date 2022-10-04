@@ -3,7 +3,7 @@ package pl.lanku.inventoryappv2.presentation.products
 import androidx.lifecycle.ViewModel
 import pl.lanku.inventoryappv2.data.ProductRepository
 
-class MainFragmentViewModel(
+class AddNewProductViewModel(
     private val productRepository: ProductRepository
 ) : ViewModel() {
 

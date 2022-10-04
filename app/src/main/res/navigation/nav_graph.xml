@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/addNewProductActivity">
+
+    <activity
+        android:id="@+id/addNewProductActivity"
+        android:name="pl.lanku.inventoryappv2.presentation.products.AddNewProductActivity"
+        android:label="fragment_add_new_product"
+        tools:layout="@layout/fragment_add_new_product" />
+    <fragment
+        android:id="@+id/productListFragment"
+        android:name="pl.lanku.inventoryappv2.presentation.products.ProductListFragment"
+        android:label="fragment_product_list"
+        tools:layout="@layout/fragment_product_list" >
+        <action
+            android:id="@+id/action_productListFragment_to_addNewProductActivity"
+            app:destination="@id/addNewProductActivity" />
+    </fragment>
+</navigation>

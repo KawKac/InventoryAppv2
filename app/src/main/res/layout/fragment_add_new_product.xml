@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:name="pl.lanku.inventoryappv2.presentation.products.MainFragment">
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".presentation.products.AddNewProductActivity">
 
     <EditText
         android:id="@+id/editTextEanOrIan"
