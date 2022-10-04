@@ -5,6 +5,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
+import pl.lanku.inventoryappv2.R
 import pl.lanku.inventoryappv2.databinding.FragmentAddNewProductBinding
 
 class AddNewProductFragment : Fragment() {
@@ -27,7 +29,7 @@ class AddNewProductFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.formFragmentToProductList.setOnClickListener {
-//            findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
+            findNavController().navigate(R.id.action_addNewProductFragment_to_productListFragment)
         }
     }
 

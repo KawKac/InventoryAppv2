@@ -11,4 +11,8 @@
     <!-- Product List Fragment-->
     <string name="back">Back</string>
 
+    <!-- Nav graph -->
+    <string name="labelFragmentProductList">Fragment Product List</string>
+    <string name="labelFragmentAddNewProduct">Fragment Add New Product</string>
+
 </resources>
